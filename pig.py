@@ -63,7 +63,7 @@ class Die:
     def roll(self):
         """ Use random to roll dice. Return number from (1,6)""" 
         return random.randint(1, self.sides)
-        # print(f'You rolled {roll}')
+      
 
 
 
@@ -73,6 +73,7 @@ class Game:
     def __init__ (self):
         self.player1 = None
         self.player2 = None
+        
 
     def toss_coin(self):
         user_player = UserPlayer()
@@ -114,26 +115,8 @@ class Game:
 game = Game()
 game.play()
 
-
-        
-
-
-    
-      
-
-        
-       
-
-    
-
-
-
-
 # tossed = Coin()
 # tossed.toss()
 # dice = Die(6)
 # rolled = dice.roll()
 # print(rolled)
-
-game = Game()
-game.first_play()
